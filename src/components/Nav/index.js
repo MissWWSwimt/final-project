@@ -16,7 +16,7 @@ const navItems = [
 
 function Nav() {
   return (
-    <div className="nav">
+    <div className="nav scrollmenu">
       <Logo />
       {
             navItems.map((item) => (
