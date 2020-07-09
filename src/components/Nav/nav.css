@@ -20,7 +20,7 @@
 
 
 .nav a{
-  width: 100px;
+  width: 150px;
   text-align: center;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -32,3 +32,15 @@
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   }
+  
+    div.scrollmenu {
+      white-space: nowrap;
+      overflow: auto;
+      /* -webkit-mask-image: linear-gradient(.25turn, black, 98%, transparent); */
+      /* mask-image: linear-gradient(.25turn, black, 98%, transparent); */
+    }
+    
+    div.scrollmenu a {
+      display: inline-block;
+    
+    }

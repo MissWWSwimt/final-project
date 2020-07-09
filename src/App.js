@@ -1,9 +1,12 @@
 import React from 'react'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import Statistics from './pages/Statistics'
-import Heat from './pages/Heat'
 import Dust from './pages/Dust'
-import NotFoundPage from './pages/NotFound'
+import Temperature from './pages/Temperature'
+import AirHumidity from './pages/AirHumidity'
+import Subscribe from './pages/Subscribe'
+import Logo from './components/Nav/Logo'
+// import NotFoundPage from './pages/NotFound'
 
 
 function App() {
@@ -11,9 +14,11 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/statistics" component={Statistics} exact />
-        <Route path="/heat" component={Heat} exact />
+        <Route path="/subscribe" component={Subscribe} exact />
+        <Route path="/temperature" component={Temperature} exact />
         <Route path="/" component={Dust} exact />
-        <Route component={NotFoundPage} />
+        <Route path="/air-humidity" component={AirHumidity} exact />
+        <Route path="about_us" component={Logo} />
       </Switch>
     </BrowserRouter>
   )
