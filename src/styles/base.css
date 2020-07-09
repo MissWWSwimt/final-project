@@ -18,3 +18,11 @@ a {
   height: 95vh;
 }
 
+
+.leaflet-marker-icon {
+  background-image: url("../icons/marker.svg");
+  background-size: 35px;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+}

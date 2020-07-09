@@ -8,7 +8,7 @@ const navItems = [
   { id: 2, link: '/temperature', text: 'Temperature' },
   { id: 3, link: '/air-humidity', text: 'Air humidity' },
   { id: 4, link: '/subscribe', text: 'Subscribe' },
-  { id: 3, link: '/statistics', text: 'Statistics' },
+  { id: 5, link: '/statistics', text: 'Statistics' },
   // { id: 4, link: '/contacts', text: 'Contacts' },
 
 ]

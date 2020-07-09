@@ -17,7 +17,7 @@ function App() {
         <Route path="/subscribe" component={Subscribe} exact />
         <Route path="/temperature" component={Temperature} exact />
         <Route path="/" component={Dust} exact />
-        <Route path="/air-humidity" component={AirHumidity} exact />
+        <Route path="/air_humidity" component={AirHumidity} exact />
         <Route path="about_us" component={Logo} />
       </Switch>
     </BrowserRouter>
