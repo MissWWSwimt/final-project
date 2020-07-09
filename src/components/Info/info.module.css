@@ -1,0 +1,9 @@
+.wrapper {
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.line {
+  padding: 8px 25px;
+}
