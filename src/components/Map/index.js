@@ -11,15 +11,43 @@ function Map(props) {
     if (data !== 0) {
       // make copy of deeply nested array
       const dataForProcessing = JSON.parse(JSON.stringify(data))
-      const refinedData = dataForProcessing.filter(
-        (elem) => elem.sensordatavalues[0].value_type !== 'temperature' && elem.sensordatavalues[0].value_type !== 'humidity',
-      )
-      refinedData.forEach((elem) => {
-        const filtered = elem.sensordatavalues.filter(
-          (elem) => elem.value_type === 'P2',
-        )
-        elem.sensordatavalues = filtered[0]
-      })
+      let refinedData = []
+      let filtered = []
+      switch (props.type) {
+        case 'dust':
+          refinedData = dataForProcessing.filter(
+            (elem) => elem.sensordatavalues[0].value_type !== 'temperature' && elem.sensordatavalues[0].value_type !== 'humidity',
+          )
+          refinedData.forEach((elem) => {
+            filtered = elem.sensordatavalues.filter(
+              (elem) => elem.value_type === 'P2',
+            )
+            elem.sensordatavalues = filtered[0]
+          })
+          break
+        case 'temperature':
+          refinedData = dataForProcessing.filter(
+            (elem) => elem.sensordatavalues[0].value_type !== 'P0' && elem.sensordatavalues[0].value_type !== 'P1' && elem.sensordatavalues[0].value_type !== 'P2',
+          )
+          refinedData.forEach((elem) => {
+            filtered = elem.sensordatavalues.filter(
+              (elem) => elem.value_type === 'temperature',
+            )
+            elem.sensordatavalues = filtered[0]
+          })
+          break
+        case 'humidity':
+          refinedData = dataForProcessing.filter(
+            (elem) => elem.sensordatavalues[0].value_type !== 'P0' && elem.sensordatavalues[0].value_type !== 'P1' && elem.sensordatavalues[0].value_type !== 'P2',
+          )
+          refinedData.forEach((elem) => {
+            filtered = elem.sensordatavalues.filter(
+              (elem) => elem.value_type === 'humidity',
+            )
+            elem.sensordatavalues = filtered[0]
+          })
+          break
+      }
       const preDataToDisplay = refinedData.map((elem) => {
         const data = {
           id: elem.sensor.id,
@@ -37,7 +65,7 @@ function Map(props) {
         self,
       ) => (
         index
-                    === self.findIndex((t) => t.id === obj.id)
+                      === self.findIndex((t) => t.id === obj.id)
       ))
       dataToDisplay.forEach((elem) => {
         const numberIcon = L.divIcon({
@@ -55,7 +83,7 @@ function Map(props) {
   }
   let { data } = props
   useEffect(() => {
-    if (map != undefined) { map.remove() }
+    if (map !== undefined) { map.remove() }
     map = L.map('map').setView(center, zoom)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -64,7 +92,9 @@ function Map(props) {
   })
 
   return (
-    <div className="map" id="map" />
+    <div className="map" id="map">
+      <slot />
+    </div>
 
   )
 }
