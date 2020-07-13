@@ -1,5 +1,7 @@
 import React from 'react'
+import axios from 'axios'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import { connect } from 'react-redux'
 import Statistics from './pages/Statistics'
 import Dust from './pages/Dust'
 import Temperature from './pages/Temperature'
@@ -7,9 +9,18 @@ import AirHumidity from './pages/AirHumidity'
 import Subscribe from './pages/Subscribe'
 import Logo from './components/Nav/Logo'
 // import NotFoundPage from './pages/NotFound'
+import { sendData } from './store/actions'
 
 
-function App() {
+function App(props) {
+  let data
+  const API = 'https://krakenflask.herokuapp.com/readcurrentdata'
+  axios
+    .get(API)
+    .then((response) => {
+      data = response.data
+      props.sendData(data)
+    })
   return (
     <BrowserRouter>
       <Switch>
@@ -24,4 +35,9 @@ function App() {
   )
 }
 
-export default App
+
+const mapDispatchToProps = (dispatch) => ({
+  sendData: (data) => dispatch(sendData(data)),
+})
+
+export default connect(null, mapDispatchToProps)(App)
