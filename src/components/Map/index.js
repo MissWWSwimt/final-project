@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import L from 'leaflet'
 import { connect } from 'react-redux'
-import PageWrapper from '../PageWrapper'
 
 let map
 const center = [42.87, 74.594]

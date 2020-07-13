@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PageWrapper from '../../components/PageWrapper'
 import Map from '../../components/Map'
 
