@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
 import axios from 'axios'
 import L from 'leaflet'
 import PageWrapper from '../../components/PageWrapper'
@@ -44,22 +43,22 @@ function Statistics(props) {
   }, [stopSignal])
   const prepareData = (record) => {
     markerGroup.clearLayers()
-    const workData = JSON.parse(JSON.stringify(globaldata))
+    const work_data = JSON.parse(JSON.stringify(globaldata))
     const datestring = record.substring(0, 10)
-    const refinedData = workData.filter(
-      (elem) => elem.sensordatavalues[0].value_type != 'temperature'
-        && elem.sensordatavalues[0].value_type != 'humidity',
+    const refined_data = work_data.filter(
+      (elem) => elem.sensordatavalues[0].value_type !== 'temperature'
+        && elem.sensordatavalues[0].value_type !== 'humidity',
     )
-    const preparedData = refinedData.filter(
-      (elem) => elem.timestamp.substring(0, 10) == datestring,
+    const prepared_data = refined_data.filter(
+      (elem) => elem.timestamp.substring(0, 10) === datestring,
     )
-    preparedData.forEach((elem) => {
+    prepared_data.forEach((elem) => {
       const filtered = elem.sensordatavalues.filter(
-        (elem) => elem.value_type == 'P2',
+        (elem) => elem.value_type === 'P2',
       )
       elem.sensordatavalues = filtered[0]
     })
-    const predataToDisplay = preparedData.map((elem) => {
+    const pre_data_to_display = prepared_data.map((elem) => {
       const data = {
         id: elem.sensor.id,
         latitude: elem.location.latitude,
@@ -70,7 +69,7 @@ function Statistics(props) {
       }
       return data
     })
-    const dataToDisplay = predataToDisplay.filter((
+    const data_to_display = pre_data_to_display.filter((
       obj,
       index,
       self,
@@ -78,7 +77,7 @@ function Statistics(props) {
       index
         === self.findIndex((t) => t.id === obj.id)
     ))
-    dataToDisplay.forEach((elem) => {
+    data_to_display.forEach((elem) => {
       const numberIcon = L.divIcon({
         className: 'number-icon',
         iconSize: [35, 35],
@@ -90,7 +89,7 @@ function Statistics(props) {
       }).addTo(markerGroup)
     })
   }
-  const buttons = records.map((elem) => <button key={elem} onClick={() => prepareData(elem)}>{elem}</button>)
+  const buttons = records.map((elem) => <button type="button" key={elem} onClick={() => prepareData(elem)}>{elem}</button>)
 
 
   return (

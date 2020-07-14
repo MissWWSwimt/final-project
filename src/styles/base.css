@@ -64,3 +64,26 @@ label{
   width: 300px;
   height: 30px;
 }
+
+.mapStat {
+  width: 98vw;
+  margin: auto;
+  height: 63vh;
+  /* position: relative; */
+  /* border: 2.3vw solid rgb(98, 124, 98); */
+  /* padding: 10px; */
+  
+}
+
+
+.statistics{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(91, 91, 202);
+  color: beige;
+  /* flex-direction: column; */
+  /* position: absolute;
+  right:20px;
+  top: 150px; */
+}
