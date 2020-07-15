@@ -1,10 +1,12 @@
 import React from 'react'
+import PageWrapper from '../PageWrapper'
 
 function Logo() {
   return (
-    <div className="logo">
-      <a href="/about_us">toBreathe</a>
-    </div>
+    <PageWrapper>
+      <div className="logo" />
+    </PageWrapper>
+
   )
 }
 

@@ -1,15 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from './Logo'
+// import Logo from './Logo'
 import './nav.css'
 
 const navItems = [
-  { id: 1, link: '/', text: 'Dust' },
-  { id: 2, link: '/temperature', text: 'Temperature' },
-  { id: 3, link: '/air_humidity', text: 'Air humidity' },
-  { id: 4, link: '/subscribe', text: 'Subscribe' },
-  { id: 5, link: '/statistics', text: 'Statistics' },
-  // { id: 4, link: '/contacts', text: 'Contacts' },
+  { id: 1, link: '/about_us', text: 'ToBreathe' },
+  { id: 2, link: '/', text: 'Dust' },
+  { id: 3, link: '/temperature', text: 'Temperature' },
+  { id: 4, link: '/air_humidity', text: 'Air humidity' },
+  { id: 5, link: '/subscribe', text: 'Subscribe' },
+  { id: 6, link: '/statistics', text: 'Statistics' },
+
 
 ]
 
@@ -17,7 +18,7 @@ const navItems = [
 function Nav() {
   return (
     <div className="nav scrollmenu">
-      <Logo />
+      {/* <Logo /> */}
       {
             navItems.map((item) => (
               <NavLink

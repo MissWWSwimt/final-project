@@ -7,7 +7,8 @@ import Dust from './pages/Dust'
 import Temperature from './pages/Temperature'
 import AirHumidity from './pages/AirHumidity'
 import Subscribe from './pages/Subscribe'
-import Logo from './components/Nav/Logo'
+import About from './pages/About'
+// import Logo from './components/Nav/Logo'
 // import NotFoundPage from './pages/NotFound'
 import { sendData } from './store/actions'
 
@@ -29,7 +30,7 @@ function App(props) {
         <Route path="/temperature" component={Temperature} exact />
         <Route path="/" component={Dust} exact />
         <Route path="/air_humidity" component={AirHumidity} exact />
-        <Route path="about_us" component={Logo} />
+        <Route path="/about_us" component={About} exact />
       </Switch>
     </BrowserRouter>
   )

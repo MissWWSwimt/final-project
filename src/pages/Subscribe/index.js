@@ -23,11 +23,11 @@ function Subscribe() {
       case 'exists':
         setShowExists(true)
         console.log(showExists)
-        setTimeout(() => setShowExists(false), 3000)
+        setTimeout(() => setShowExists(false), 5000)
         break
       case 'success':
         setShowSuccess(true)
-        setTimeout(() => setShowSuccess(false), 3000)
+        setTimeout(() => setShowSuccess(false), 5000)
         break
     }
   }

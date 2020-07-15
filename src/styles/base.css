@@ -87,3 +87,89 @@ label{
   right:20px;
   top: 150px; */
 }
+
+.about{
+  /* background-image: url("../icons/green-earth.svg");
+  background-position: center; */
+  height: auto;
+  background-repeat: no-repeat;
+  background-color: rgb(143, 237, 253);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  margin: 0;
+  
+}
+
+.about_description{
+  /* position: absolute;
+  left: 5px;
+  top: 5px; */
+  /* display: flex; */
+  width: 450px;
+  font-size: 18px;
+  color: rgb(18, 24, 51);
+  background-color: #6bebee;
+  padding: 5px;
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid gray ;
+  border-radius: 3%;
+}
+
+.P2{
+  /* position: absolute;
+  right: 400px;
+  top: 5px; */
+  /* display: flex; */
+  width: 450px;
+  font-size: 18px;
+  color: rgb(18, 24, 51);
+  background-color: rgb(15, 235, 224);
+  padding: 5px;
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 3%;
+}
+
+.recomendation{
+  /* position: absolute; */
+  /* right: 5px;
+  top: 5px; */
+  /* display: flex; */
+  width: 450px;
+  font-size: 18px;
+  color: rgb(18, 24, 51);
+  background-color: rgb(15, 235, 224);
+  padding: 5px;
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 3%;
+}
+
+.save{
+  /* position: absolute;
+  right: 5px;
+  top: 5px; */
+  /* display: flex; */
+  width: 450px;
+  font-size: 18px;
+  color: rgb(18, 24, 51);
+  background-color: rgb(15, 235, 224);
+  padding: 5px;
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 3%;
+}
