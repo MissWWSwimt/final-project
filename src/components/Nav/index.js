@@ -5,7 +5,7 @@ import './nav.css'
 
 const navItems = [
   { id: 1, link: '/about_us', text: 'ToBreathe' },
-  { id: 2, link: '/', text: 'Dust' },
+  { id: 2, link: '/', text: 'PM2.5' },
   { id: 3, link: '/temperature', text: 'Temperature' },
   { id: 4, link: '/air_humidity', text: 'Air humidity' },
   { id: 5, link: '/subscribe', text: 'Subscribe' },
@@ -17,7 +17,7 @@ const navItems = [
 
 function Nav() {
   return (
-    <div className="nav scrollmenu">
+    <nav className="nav scrollmenu">
       {/* <Logo /> */}
       {
             navItems.map((item) => (
@@ -32,7 +32,7 @@ function Nav() {
               </NavLink>
             ))
         }
-    </div>
+    </nav>
   )
 }
 

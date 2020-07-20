@@ -23,11 +23,11 @@ function Subscribe() {
       case 'exists':
         setShowExists(true)
         console.log(showExists)
-        setTimeout(() => setShowExists(false), 5000)
+        setTimeout(() => setShowExists(false), 3000)
         break
       case 'success':
         setShowSuccess(true)
-        setTimeout(() => setShowSuccess(false), 5000)
+        setTimeout(() => setShowSuccess(false), 3000)
         break
     }
   }
@@ -36,6 +36,7 @@ function Subscribe() {
     <PageWrapper>
       <div className="subscribe_form">
         <form className="subscribe" onSubmit={sendEmail}>
+        <span>If you want to get notifications</span>
           <label htmlFor="email">Enter your email:</label>
           <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <input type="submit" value="Отправить" />

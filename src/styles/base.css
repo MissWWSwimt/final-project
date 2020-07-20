@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Permanent+Marker&display=swap');
 
 body {
   margin: 0;
@@ -34,6 +35,7 @@ a {
   background-color: rgb(143, 237, 253);
   font-size: 25px;
   font-weight: bold;
+  text-align: center;
   
 }
 
@@ -45,13 +47,18 @@ a {
   padding-top: 100px;
 }
 
-p{
+.subscribe p{
   text-align: center;
 }
 
 label{
   margin-bottom: 30px;
   font-size: 35px;
+  font-size: 40px;
+}
+
+span{
+  margin-bottom: 30px;
 }
 
 .subscribe_form input{
@@ -94,6 +101,7 @@ label{
   height: auto;
   background-repeat: no-repeat;
   background-color: rgb(143, 237, 253);
+  background-color: rgb(230, 249, 253);
   position: relative;
   display: flex;
   flex-direction: row;
@@ -114,7 +122,7 @@ ul {
   width: 450px;
   font-size: 18px;
   color: rgb(18, 24, 51);
-  background-color: #6bebee;
+  background-color: #5ab9f0;
   padding: 5px;
   /* margin-left: 20px; */
   margin-bottom: 10px;
@@ -131,7 +139,7 @@ ul {
   width: 450px;
   font-size: 18px;
   color: rgb(18, 24, 51);
-  background-color: rgb(15, 235, 224);
+  background-color: rgb(233, 158, 193);
   padding: 5px;
   /* margin-left: 20px; */
   margin-bottom: 10px;
@@ -148,7 +156,7 @@ ul {
   width: 450px;
   font-size: 18px;
   color: rgb(18, 24, 51);
-  background-color: rgb(15, 235, 224);
+  background-color: rgb(255, 255, 155);
   padding: 5px;
   /* margin-left: 20px; */
   margin-bottom: 10px;
@@ -165,11 +173,28 @@ ul {
   width: 450px;
   font-size: 18px;
   color: rgb(18, 24, 51);
-  background-color: rgb(15, 235, 224);
+  background-color: rgb(128, 241, 179);
   padding: 5px;
   /* margin-left: 20px; */
   margin-bottom: 10px;
   margin-top: 10px;
   border: 1px solid gray;
   border-radius: 3%;
+}
+
+h3{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  /* background-color: whitesmoke; */
+  margin: 20px;
+  /* border: 1px solid gray; */
+}
+
+b{
+  font-family: 'Changa', sans-serif;
+  font-size: 20px;
 }
