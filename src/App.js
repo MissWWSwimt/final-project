@@ -23,7 +23,7 @@ function App(props) {
       props.sendData(data)
     })
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname||''}>
       <Switch>
         <Route path="/statistics" component={Statistics} exact />
         <Route path="/subscribe" component={Subscribe} exact />
