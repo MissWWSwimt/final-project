@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Проект ToBreathe создан для людей, которым небезразлично свое здоровье и экологическая ситуация в целом. Здесь можно посмотреть уровень загрязнения воздуха в городе Бишкек, а так же температру и влажность воздуха. Имеется возможность подписки. Все данные получены с датчиков AirBeam, которые установленны в городе.
 На карте указаны местоположения счетчиков и данные с них.
 
@@ -26,5 +24,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Create react app,
 Leaflet (для работы с картой),
 Axios (для работы с АПИ)`.
-
 
