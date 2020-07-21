@@ -2,7 +2,7 @@
   "name": "react-starter-eslint-router",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://misswwswimt.github.io/final-project/",
+  "homepage": "http://misswwswimt.github.io/final-project",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -60,6 +60,7 @@
   "devDependencies": {
     "axios": "^0.19.2",
     "eslint-config-airbnb": "^18.1.0",
+    "gh-pages": "^3.1.0",
     "leaflet": "^1.6.0",
     "react-leaflet": "^2.7.0"
   }
