@@ -34,8 +34,7 @@
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);  
-
-  }
+}
   
     nav.scrollmenu {
       white-space: nowrap;
@@ -45,4 +44,17 @@
     nav.scrollmenu a {
       display: inline-block;
     
+    }
+
+    @media (max-width: 600px){
+      .nav{
+        font-size: 22px;
+      }
+
+      .nav a{
+        width: 150px;
+        text-align: center;
+        margin-left: 15px;
+        padding: 5px;
+        }
     }
