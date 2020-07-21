@@ -52,7 +52,7 @@
       }
 
       .nav a{
-        width: 150px;
+        width: 130px;
         text-align: center;
         margin-left: 15px;
         padding: 5px;
@@ -62,8 +62,8 @@
     @media(max-width: 500px){
       .nav a:hover{
         cursor: pointer;
-        /* -webkit-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
         -moz-transform: scale(1.0);
-        -o-transform: scale(1.0);   */
+        -o-transform: scale(1.0);  
       }
     }
