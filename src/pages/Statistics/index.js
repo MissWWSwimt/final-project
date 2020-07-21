@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import L from 'leaflet'
 import PageWrapper from '../../components/PageWrapper'
+import './statistics.css'
 
 let map
 function Statistics(props) {

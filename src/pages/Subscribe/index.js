@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import PageWrapper from '../../components/PageWrapper'
+import './subscribe.css'
 
 function Subscribe() {
   const [email, setEmail] = useState('')

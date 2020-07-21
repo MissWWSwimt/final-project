@@ -1,0 +1,26 @@
+.mapStat {
+    width: 98vw;
+    margin: auto;
+    height: 63vh;
+    
+}
+
+
+.statistics{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+    position: absolute;
+    right:20px;
+    top: 150px;
+}
+
+.statistics_btn{
+    background-color: black;
+    text-decoration: none;
+    color: var(--eleventh);
+    border: none;
+    margin-right: 5px;
+    font-size: 15px;
+}

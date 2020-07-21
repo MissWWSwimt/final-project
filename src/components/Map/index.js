@@ -1,8 +1,8 @@
-
-  
 import React, { useEffect } from 'react'
 import L from 'leaflet'
 import { connect } from 'react-redux'
+import "./map.css"
+
 
 let map
 const center = [42.87, 74.594]

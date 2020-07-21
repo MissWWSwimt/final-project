@@ -1,8 +1,6 @@
 .about{
     height: auto;
-    background-repeat: no-repeat;
-    background-color: rgb(143, 237, 253);
-    background-color: rgb(230, 249, 253);
+    background-color: var(--fifth);
     position: relative;
     display: flex;
     flex-direction: row;
@@ -11,15 +9,10 @@
 }
 
 .about_description{
-    /* position: absolute;
-    left: 5px;
-    top: 5px; */
-    /* display: flex; */
     width: 450px;
     font-size: 18px;
     color: rgb(18, 24, 51);
     padding: 5px;
-    /* margin-left: 20px; */
     margin-bottom: 10px;
     margin-top: 10px;
     border: 1px solid gray ;
@@ -27,20 +20,20 @@
 }
 
 .project{
-    background-color: #5ab9f0;
+    background-color: var(--sixth);
 }
 
 
 .P2{
-    background-color: rgb(233, 158, 193);
+    background-color: var(--seventh);
 }
 
 
 .recomendation{
-    background-color: rgb(255, 255, 155);
+    background-color: var(--eighth);
 }
 
 .recomendation2{
-    background-color: rgb(128, 241, 179);
+    background-color: var(--ninth);
 
 }
