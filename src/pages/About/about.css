@@ -1,0 +1,46 @@
+.about{
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: rgb(143, 237, 253);
+    background-color: rgb(230, 249, 253);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about_description{
+    /* position: absolute;
+    left: 5px;
+    top: 5px; */
+    /* display: flex; */
+    width: 450px;
+    font-size: 18px;
+    color: rgb(18, 24, 51);
+    padding: 5px;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid gray ;
+    border-radius: 3%;
+}
+
+.project{
+    background-color: #5ab9f0;
+}
+
+
+.P2{
+    background-color: rgb(233, 158, 193);
+}
+
+
+.recomendation{
+    background-color: rgb(255, 255, 155);
+}
+
+.recomendation2{
+    background-color: rgb(128, 241, 179);
+
+}

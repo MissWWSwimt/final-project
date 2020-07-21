@@ -1,3 +1,5 @@
+
+  
 import React, { useEffect } from 'react'
 import L from 'leaflet'
 import { connect } from 'react-redux'
@@ -13,7 +15,7 @@ function Map(props) {
       const dataForProcessing = JSON.parse(JSON.stringify(data))
       let refinedData = []
       let filtered = []
-      switch (props.type) { 
+      switch (props.type) {
         case 'dust':
           refinedData = dataForProcessing.filter(
             (elem) => elem.sensordatavalues[0].value_type !== 'temperature' && elem.sensordatavalues[0].value_type !== 'humidity',
@@ -65,7 +67,7 @@ function Map(props) {
         self,
       ) => (
         index
-                      === self.findIndex((t) => t.id === obj.id)
+                    === self.findIndex((t) => t.id === obj.id)
       ))
       dataToDisplay.forEach((elem) => {
         const numberIcon = L.divIcon({
@@ -89,11 +91,11 @@ function Map(props) {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map)
     prepareData()
-    console.log(data)
   })
 
   return (
     <div className="map" id="map">
+      <slot />
     </div>
 
   )

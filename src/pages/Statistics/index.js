@@ -89,7 +89,7 @@ function Statistics(props) {
       }).addTo(markerGroup)
     })
   }
-  const buttons = records.map((elem) => <button type="button" key={elem} onClick={() => prepareData(elem)}>{elem}</button>)
+  const buttons = records.map((elem) => <button className="statistics_btn" type="button" key={elem} onClick={() => prepareData(elem)}>{elem}</button>)
 
 
   return (
