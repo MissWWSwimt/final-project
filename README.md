@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Сайт доступен по адресу: https://misswwswimt.github.io/final-project/
 
 ### Технологии, которые были использованы:
-Create react app
-Leaflet (для работы с картой)
-Axios (для работы с АПИ)`
+Create react app,
+Leaflet (для работы с картой),
+Axios (для работы с АПИ)`.
 
