@@ -31,9 +31,9 @@
   }
   
 .nav a:hover{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);  
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);  
 }
   
     nav.scrollmenu {
@@ -57,4 +57,13 @@
         margin-left: 15px;
         padding: 5px;
         }
+}
+
+    @media(max-width: 500px){
+      .nav a:hover{
+        cursor: pointer;
+        /* -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);   */
+      }
     }
